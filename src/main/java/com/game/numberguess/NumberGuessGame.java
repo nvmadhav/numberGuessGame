@@ -23,7 +23,7 @@ public class NumberGuessGame {
             while (!inputResult.equalsIgnoreCase("YES")) {
                 numberGuess.setResultText(inputResult);
                 numberGuess = generator.getNextGuess(numberGuess);
-                System.out.println("Is This the Number you have selected? Please say HIGH / LOW / YES: " + numberGuess.getNextGuess());
+                System.out.println("Is the Number " + numberGuess.getNextGuess() + "? Please say HIGH / LOW / YES: ");
                 inputResult = scan.next();
             }
         } catch (Exception e) {
